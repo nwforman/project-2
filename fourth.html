@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Random Text Visibility</title>
+    <style></style>
+    <body>
+<br> <br/><br> <br/><br> <br/><br> <br/><br> <br/><br> <br/>
+<audio id="2Audio">
+    <source src="Audio/fourth.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    window.addEventListener('load', function() {
+        var audio = document.getElementById('2Audio');
+        audio.play().catch(function(error) {
+            console.log('Autoplay prevented: ', error);
+        });
+    });
+    </script>
+        <div id="text" class="hidden">   <a href="fifth.html">Ok, you can click this time.</a></div>
+    
+        <script>
+            const textElement = document.getElementById('text');
+
+            document.addEventListener('keydown', function(event) {
+
+                if (event.code === 'Space') {
+
+                    textElement.classList.remove('hidden');
+                    textElement.classList.add('visible');
+                }
+            });
+        </script>
+    
+        <style>
+
+            .hidden {
+                display: none;
+            }
+    
+            .visible {
+                display: block;
+            }
+        </style>
+    </body>
+    

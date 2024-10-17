@@ -1,0 +1,27 @@
+
+body {
+    margin: 0;
+    background-image:url("for.webp");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+/* To prevent scrollbars */
+}
+.gif-container1 {
+    display: flex;            
+    justify-content: center;    
+               
+    flex-wrap: nowrap;  
+}
+.text{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color: aliceblue;  
+    margin-left: 40px;
+    min-width: 600px;
+
+    text-shadow: 2px 2px 4px #ff0000;
+}
+
+

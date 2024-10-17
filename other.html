@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/style2.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+<body>
+
+    <audio id="2Audio">
+        <source src="Audio/second.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('2Audio');
+            audio.play().catch(function(error) {
+                console.log('Autoplay prevented: ', error);
+            });
+        });
+    </script>
+<div class="model-container">
+<model-viewer src="Headphones_and_Hat_1003022555.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="agx" poster="poster.webp" shadow-intensity="0" exposure="0.86" shadow-softness="0">
+    </button>
+</model-viewer>
+<model-viewer src="Contemplative_Moment_1003034332.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+
+</model-viewer>
+
+<model-viewer src="Headphones_and_Hat_1003022555.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="agx" poster="poster.webp" shadow-intensity="0" exposure="0.86" shadow-softness="0">
+</model-viewer>
+</div>
+<br> <br/>
+<div class ="text">
+<a href="web_pop_up.mp4">{ "accessors": [ { "bufferView": 1, "byteOffset": 0, "componentType": 5126, "normalized": false, "count": 41196, "type": "VEC3", "max": [ 0.8247179985046387, 0.9945099949836731, 0.7974349856376648 ], "min": [ -0.8271039724349976, -0.9944030046463013, -0.7709000110626221 ] }, { "bufferView": 2, "byteOffset": 0, "componentType": 5126, "normalized": false, "count": 41196, "type": "VEC2", "max": [ 0.99462890625, 0.9990234375 ], "min": [ 0.0011911392211914062, 0.0011911392211914062 ] }, { "bufferView": 3, "byteOffset": 0, "componentType": 5126, "normalized": false, "count": 41196, "type": "VEC3", "max": [ 0.9999936819076538, 0.9999762773513794, 0.9999964237213135 ], "min": [ -0.9999978542327881, -0.999984860420227, -0.9999992847442627 ] }, { "bufferView": 0, "byteOffset": 0, "componentType": 5125, "normalized": false, "count": 178923, "type": "SCALAR" } ], "asset": { "generator": "pygltflib@v1.16.1", "version": "2.0" }, "bufferViews": [ { "buffer": 0, "byteOffset": 0, "byteLength": 715692, "target": 34963 }, { "buffer": 0, "byteOffset": 715692, "byteLength": 494352, "target": 34962 }, { "buffer": 0, "byteOffset": 1210044, "byteLength": 329568, "target": 34962 }, { "buffer": 0, "byteOffset": 1539612, "byteLength": 494352, "target": 34962 }, { "buffer": 0, "byteOffset": 2033964, "byteLength": 727337 } ], "buffers": [ { "byteLength": 2761304 } ], "images": [ { "mimeType": "image/jpeg", "bufferView": 4 } ], "materials": [ { "pbrMetallicRoughness": { "baseColorFactor": [ 1, 1, 1, 1 ], "metallicFactor": 0, "roughnessFactor": 0.8, "baseColorTexture": { "index": 0, "texCoord": 0 } }, "emissiveFactor": [ 0, 0, 0 ], "alphaMode": "OPAQUE", "doubleSided": true } ], "meshes": [ { "primitives": [ { "attributes": { "POSITION": 0, "NORMAL": 2, "TEXCOORD_0": 1 }, "indices": 3, "mode": 4, "material": 0 } ] } ], "nodes": [ { "mesh": 0, "matrix": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ] } ], "samplers": [ { "magFilter": 9729, "minFilter": 9987, "wrapS": 10497, "wrapT": 10497 } ], "scene": 0, "scenes": [ { "nodes": [ 0 ] } ], "textures": [ { "sampler": 0, "source": 0 } ] }
+</a>
+
+</div>
+
+
+<script>
+    document.addEventListener('keydown', function(event) {
+      if (event.code === "Enter") { 
+        window.location.href = 'third.html'; 
+      }
+    });
+</script>
+</body>
+
+</html>

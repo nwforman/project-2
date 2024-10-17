@@ -1,0 +1,98 @@
+.model-container {
+    display: flex;
+    justify-content: space-around; 
+    gap: 20px; 
+}
+model-viewer {
+    width: 400px; 
+    height: 400px; 
+    border: 1px solid #ffffff; 
+    transition: border-width 0.5s ease-in-out; 
+}
+model-viewer:hover {
+    border-width: 100px; 
+    border-color: #fefefe; 
+}
+body {
+
+
+    margin-left: 10%;
+    margin-bottom: 10%;
+    font-size:large;
+    font-family: fantasy;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: rainbowBackground 10s infinite;
+    background-size: 400% 400%;
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+}
+
+@keyframes rainbowBackground {
+    0%   { background: linear-gradient(41deg, violet, blue, green, yellow, orange, red); }
+    2%   { background: linear-gradient(45deg, violet, blue, green, yellow, orange, red); }
+    4%   { background: linear-gradient(45deg, indigo, blue, green, yellow, orange, red); }
+    6%   { background: linear-gradient(25deg, blue, indigo, green, yellow, orange, red); }
+    8%   { background: linear-gradient(45deg, blue, violet, green, yellow, orange, red); }
+    10%  { background: linear-gradient(45deg, blue, green, violet, yellow, orange, red); }
+    12%  { background: linear-gradient(45deg, blue, green, yellow, violet, orange, red); }
+    14%  { background: linear-gradient(45deg, green, blue, yellow, violet, red, orange); }
+    16%  { background: linear-gradient(45deg, green, yellow, blue, violet, red, orange); }
+    18%  { background: linear-gradient(205deg, yellow, green, blue, violet, red, orange); }
+    20%  { background: linear-gradient(45deg, yellow, orange, green, blue, violet, red); }
+    22%  { background: linear-gradient(45deg, orange, yellow, green, blue, violet, red); }
+    24%  { background: linear-gradient(45deg, orange, red, yellow, green, blue, violet); }
+    26%  { background: linear-gradient(0deg, red, orange, yellow, green, blue, violet); }
+    28%  { background: linear-gradient(45deg, red, yellow, orange, green, blue, violet); }
+    30%  { background: linear-gradient(45deg, violet, red, yellow, orange, green, blue); }
+    32%  { background: linear-gradient(100deg, violet, blue, red, yellow, orange, green); }
+    34%  { background: linear-gradient(45deg, violet, blue, green, red, yellow, orange); }
+    36%  { background: linear-gradient(45deg, violet, blue, green, yellow, red, orange); }
+    38%  { background: linear-gradient(95deg, violet, blue, green, yellow, orange, red); }
+    40%  { background: linear-gradient(45deg, violet, blue, green, yellow, orange, red); }
+    42%  { background: linear-gradient(45deg, red, orange, yellow, green, blue, violet); }
+    44%  { background: linear-gradient(20deg, orange, red, yellow, green, blue, violet); }
+    46%  { background: linear-gradient(45deg, yellow, orange, red, green, blue, violet); }
+    48%  { background: linear-gradient(45deg, green, yellow, orange, red, blue, violet); }
+    50%  { background: linear-gradient(45deg, blue, green, yellow, orange, red, violet); }
+    52%  { background: linear-gradient(45deg, violet, blue, green, yellow, orange, red); }
+    54%  { background: linear-gradient(4deg, violet, indigo, blue, green, yellow, orange); }
+    56%  { background: linear-gradient(45deg, blue, violet, indigo, green, yellow, orange); }
+    58%  { background: linear-gradient(45deg, blue, violet, green, indigo, yellow, orange); }
+    60%  { background: linear-gradient(95deg, blue, violet, green, yellow, indigo, orange); }
+    62%  { background: linear-gradient(45deg, green, blue, violet, yellow, indigo, orange); }
+    64%  { background: linear-gradient(16deg, yellow, green, blue, violet, indigo, orange); }
+    66%  { background: linear-gradient(45deg, orange, yellow, green, blue, violet, indigo); }
+    68%  { background: linear-gradient(45deg, red, orange, yellow, green, blue, violet); }
+    70%  { background: linear-gradient(45deg, red, violet, orange, yellow, green, blue); }
+    72%  { background: linear-gradient(45deg, red, orange, violet, yellow, green, blue); }
+    74%  { background: linear-gradient(45deg, violet, red, orange, yellow, green, blue); }
+    76%  { background: linear-gradient(115deg, blue, violet, red, orange, yellow, green); }
+    78%  { background: linear-gradient(45deg, blue, violet, orange, red, yellow, green); }
+    80%  { background: linear-gradient(45deg, green, blue, violet, orange, red, yellow); }
+    82%  { background: linear-gradient(45deg, yellow, green, blue, violet, orange, red); }
+    84%  { background: linear-gradient(345deg, orange, yellow, green, blue, violet, red); }
+    86%  { background: linear-gradient(45deg, red, orange, yellow, green, blue, violet); }
+    88%  { background: linear-gradient(59deg, red, violet, orange, yellow, green, blue); }
+    90%  { background: linear-gradient(45deg, violet, red, orange, yellow, green, blue); }
+    92%  { background: linear-gradient(45deg, violet, blue, red, orange, yellow, green); }
+    94%  { background: linear-gradient(45deg, violet, blue, green, red, orange, yellow); }
+    96%  { background: linear-gradient(305deg, violet, blue, green, yellow, red, orange); }
+    98%  { background: linear-gradient(45deg, violet, blue, green, yellow, orange, red); }
+    100% { background: linear-gradient(45deg, red, orange, yellow, green, blue, violet); }
+  }
+  
+
+.model-container {
+    position: relative;
+    z-index: 2;
+}
+
+.text {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
